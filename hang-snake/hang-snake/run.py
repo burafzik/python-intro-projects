@@ -118,7 +118,7 @@ _______/|\_
 '''
 
 
-A = [FIELD_START, FIELD_2, FIELD_3, FIELD_4, FIELD_5,
+Field = [FIELD_START, FIELD_2, FIELD_3, FIELD_4, FIELD_5,
      FIELD_6, FIELD_7, FIELD_8, FIELD_9, FIELD_FINAL]
 FIELD = FIELD_START
 n = 0
@@ -133,7 +133,7 @@ while f:
     if letter not in SECRET:
         
         n = n + 1
-        FIELD = A[n]
+        FIELD = Field[n]
         st = string(letter)
         print(st)
         if FIELD == FIELD_FINAL:
